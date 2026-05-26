@@ -18,26 +18,26 @@ const Navbar = () => {
                     }`}
             >
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link onClick={() => setMenuOpen(false)} to="/">Home</Link>
                 </li>
 
                 <li>
-                    <Link to="/the-story">About</Link>
+                    <Link onClick={() => setMenuOpen(false)} to="/the-story">About</Link>
                 </li>
 
                 <li>
-                    <Link to="/my-toolkit">Skills</Link>
+                    <Link onClick={() => setMenuOpen(false)} to="/my-toolkit">Skills</Link>
                 </li>
 
                 <li>
-                    <Link to="/journey">Experience</Link>
+                    <Link onClick={() => setMenuOpen(false)} to="/journey">Experience</Link>
                 </li>
 
                 <li>
-                    <Link to="/crafted-projects">Projects</Link>
+                    <Link onClick={() => setMenuOpen(false)} to="/crafted-projects">Projects</Link>
                 </li>
                 <li>
-                    <Link to="/lets-connect">Contact</Link>
+                    <Link onClick={() => setMenuOpen(false)} to="/lets-connect">Contact</Link>
                 </li>
             </ul>
 

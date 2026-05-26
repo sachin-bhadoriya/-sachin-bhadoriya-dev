@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import VantaBackground from './assets/VantaBackground'
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './assets/Navbar'
@@ -9,8 +9,19 @@ import Experience from "./pages/Experience"
 import Project from "./pages/Project"
 import Contact from "./pages/Contact"
 import Resume from "./pages/Resume"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const App = () => {
+
+  useEffect(() => {
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true      // animation triggers only once // false karne pr animation repeat hoga 
+  });
+}, []);
+
   return (
     <div className="app">
 

@@ -20,7 +20,7 @@ const experienceData = [
 
 const Experience = () => {
   return (
-    <section className="p-experience-m-c">
+    <section data-aos="fade" className="p-experience-m-c">
       <div className="experience-header">
         <h2>EXPERIENCE</h2>
       </div>
@@ -32,7 +32,7 @@ const Experience = () => {
           const positionClass = index % 2 === 0 ? "left-card" : "right-card";
 
           return (
-            <div className={`timeline-item ${positionClass}`} key={index}>
+            <div data-aos="zoom-in" className={`timeline-item ${positionClass}`} key={index}>
               <div className="timeline-dot"></div>
 
               <div className="experience-card">

@@ -69,11 +69,11 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <section className='p-projects-m-c'>
+    <section data-aos="fade" className='p-projects-m-c'>
       <h2>PROJECTS</h2>
       <div className="projects-container">
         {projectsData.map((project, index) => (
-          <div className="project-card" key={index}>
+          <div data-aos="zoom-in" className="project-card" key={index}>
             <div className="project-img-wrapper">
               <img src={project.img} alt={project.title} />
             </div>

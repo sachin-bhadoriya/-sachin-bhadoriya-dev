@@ -25,13 +25,13 @@ const skill = {
 
 const Skills = () => {
   return (
-    <section className='p-about-m-c'>
+    <section data-aos="fade" className='p-about-m-c'>
       <h2>SKILLS</h2>
       <article className='p-skills-article-c'>
         <h4>Frontend Technologies</h4>
         <div className="skills-container">
           {skill.frontend.map((i, index) => (
-            <div className="skill-box" key={index}>
+            <div data-aos="zoom-in" className="skill-box" key={index}>
               <img src={i.img} alt={i.name} />
               <h5>{i.name}</h5>
             </div>
@@ -42,7 +42,7 @@ const Skills = () => {
         <h4>Backend & Database Technologies</h4>
         <div className="skills-container">
           {skill.backend.map((i, index) => (
-            <div className="skill-box" key={index}>
+            <div data-aos="zoom-in" className="skill-box" key={index}>
               <img src={i.img} alt={i.name} />
               <h5>{i.name}</h5>
             </div>
@@ -53,7 +53,7 @@ const Skills = () => {
         <h4>Tools & Platforms & Others</h4>
         <div className="skills-container">
           {skill.tools.map((i, index) => (
-            <div className="skill-box" key={index}>
+            <div data-aos="zoom-in" className="skill-box" key={index}>
               <img src={i.img} alt={i.name} />
               <h5>{i.name}</h5>
             </div>

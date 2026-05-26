@@ -3,7 +3,7 @@ import './styles/contact.scss'
 
 const Contact = () => {
   return (
-    <section className='p-about-m-c'>
+    <section data-aos="fade" className='p-about-m-c'>
       <h2>LET'S CONNECT !</h2>
       <article className='p-contact-article-c'>
         <div className="p-contact-data-c">
@@ -16,7 +16,7 @@ const Contact = () => {
           <Link><img src="https://img.icons8.com/?size=100&id=kBCrQMzpQDLQ&format=png&color=000000" alt="Linkedin" loading='lazy' /></Link>
           <Link><img src="https://img.icons8.com/?size=100&id=LoL4bFzqmAa0&format=png&color=000000" alt="Github" loading='lazy' /></Link>
         </div>
-        <form>
+        <form data-aos="zoom-in">
           <label htmlFor="">Name</label>
           <input type="text" placeholder='John Doe' />
           <label htmlFor="">Contact Number</label>
