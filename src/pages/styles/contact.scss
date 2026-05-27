@@ -35,7 +35,7 @@ form {
     border-radius: 10px;
     box-shadow: 4px 4px 0px #fff;
     font-family: "Inter", sans-serif;
-    filter: drop-shadow(5px);
+    backdrop-filter: blur(10px);
 }
 
 form input,
