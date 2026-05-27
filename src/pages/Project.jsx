@@ -61,7 +61,7 @@ const projectsData = [
     category: "Frontend Project",
     description: "My personal developer portfolio website designed with a sleek glassmorphic theme. Highlights my frontend, backend skills, projects, and career journey with smooth animations.",
     img: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=500&auto=format&fit=crop", 
-    tags: ["React", "SCSS", Three.JS],
+    tags: ["React", "SCSS", "Three.JS"],
     liveLink: "https://sachin-bhadoriya-dev.vercel.app/", 
     githubLink: "https://github.com/sachin-bhadoriya/-sachin-bhadoriya-dev"
   }
