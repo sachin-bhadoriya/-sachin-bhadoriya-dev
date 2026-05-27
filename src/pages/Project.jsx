@@ -6,8 +6,8 @@ const projectsData = [
     title: "Hotel Booking Website",
     category: "Full Stack Project",
     description: "A comprehensive hotel management platform featuring real-time room booking, availability checks, secure payment gateway integration, and an intuitive user dashboard.",
-    img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=500&auto=format&fit=crop", // Apne screenshot ka path lagayein
-    tags: ["React", "NodeJS", "MongoDB", "Express", "Stripe"],
+    img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=500&auto=format&fit=crop", 
+    tags: ["React", "NodeJS", "MongoDB", "Express"],
     liveLink: "https://hill-view-escape-frontend-only.vercel.app/",
     githubLink: "https://github.com/sachin-bhadoriya/Hill_View_Escape-Frontend-only"
   },
@@ -16,7 +16,7 @@ const projectsData = [
     category: "Full Stack Project",
     description: "A full-stack note-taking app featuring robust JWT authentication. It ensures complete privacy with isolated databases/routes so users can manage only their separate notes.",
     img: "https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=500&auto=format&fit=crop",
-    tags: ["React", "NodeJS", "MongoDB", "JWT", "Tailwind"],
+    tags: ["React", "NodeJS", "MongoDB", "JWT"],
     liveLink: "https://notes-app-blond-seven.vercel.app/",
     githubLink: "https://github.com/sachin-bhadoriya/Notes-app"
   },
@@ -25,7 +25,7 @@ const projectsData = [
     category: "Backend Project",
     description: "A secure backend service focusing on complete user lifecycle: Login, Signup routes with password encryption (bcrypt), and a secure Change Password feature.",
     img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=500&auto=format&fit=crop",
-    tags: ["NodeJS", "ExpressJS", "MongoDB", "Bcrypt", "Postman"],
+    tags: ["NodeJS", "ExpressJS", "MongoDB", "JWT", "Postman"],
     liveLink: "https://github.com/sachin-bhadoriya/Auth-Routes",
     githubLink: "https://github.com/sachin-bhadoriya/Auth-Routes"
   },
@@ -34,7 +34,7 @@ const projectsData = [
     category: "React Native Project",
     description: "A cross-platform mobile application for food lovers. Users can browse categories, search for custom recipes, view step-by-step cooking guides, and save favorites.",
     img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=500&auto=format&fit=crop",
-    tags: ["React Native", "Expo", "Context API", "Recipe API"],
+    tags: ["React Native", "Context API", "Recipe API"],
     liveLink: "https://drive.google.com/drive/folders/16mbmgljy_wP2eHfQUZqHc5nDhO-Ig5Wx",
     githubLink: "https://github.com/sachin-bhadoriya/ReactNative-FoodRecipe_App"
   },
@@ -61,9 +61,9 @@ const projectsData = [
     category: "Frontend Project",
     description: "My personal developer portfolio website designed with a sleek glassmorphic theme. Highlights my frontend, backend skills, projects, and career journey with smooth animations.",
     img: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=500&auto=format&fit=crop", 
-    tags: ["React", "SCSS", "Framer Motion", "Glassmorphism"],
-    liveLink: "https://sachin-bhadoriya.vercel.app/", 
-    githubLink: "https://github.com/sachin-bhadoriya/my-portfolio"
+    tags: ["React", "SCSS", Three.JS],
+    liveLink: "https://sachin-bhadoriya-dev.vercel.app/", 
+    githubLink: "https://github.com/sachin-bhadoriya/-sachin-bhadoriya-dev"
   }
 ];
 
