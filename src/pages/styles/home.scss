@@ -66,6 +66,7 @@
     color: #fff;
     background-color: transparent;
     box-shadow: 2px 2px 0px #fff;
+    backdrop-filter: blur(10px);
 }
 
 .p-home-m-c button:nth-child(1) a {
@@ -83,6 +84,7 @@
     color: #b9436c;
     background-color: transparent;
     box-shadow: 2px 2px 0px #b9436c;
+    backdrop-filter: blur(10px);
 }
 
 @media screen and (max-width: 768px) {
