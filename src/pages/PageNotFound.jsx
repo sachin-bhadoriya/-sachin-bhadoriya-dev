@@ -4,6 +4,7 @@ import React from "react";
 import { HiOutlineHome } from "react-icons/hi2";
 import { FiFileText } from "react-icons/fi";
 import "./styles/pageNotFound.css";
+import {Link} from "react-router-dom"
 
 const PageNotFound = () => {
   return (
@@ -23,10 +24,10 @@ const PageNotFound = () => {
 
      
 
-      <a href="/" className="home-btn">
+      <Link to="/" className="home-btn">
         <HiOutlineHome />
         Back to Home
-      </a>
+      </Link>
     </div>
     </div>
   );
