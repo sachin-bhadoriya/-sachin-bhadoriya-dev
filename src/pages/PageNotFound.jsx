@@ -7,6 +7,7 @@ import "./styles/pageNotFound.css";
 
 const PageNotFound = () => {
   return (
+    <div className="notfound-card-container">
     <div className="notfound-card">
       <div className="icon-box">
         <FiFileText className="file-icon" />
@@ -20,17 +21,13 @@ const PageNotFound = () => {
         Oops! The page you are looking for doesn’t exist or has been moved.
       </p>
 
-      <div className="info-box">
-        <span className="dot"></span>
-        <p>
-          Don’t worry, you can find plenty of other things on our homepage.
-        </p>
-      </div>
+     
 
       <a href="/" className="home-btn">
         <HiOutlineHome />
         Back to Home
       </a>
+    </div>
     </div>
   );
 };
