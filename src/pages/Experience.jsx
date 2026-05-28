@@ -6,15 +6,22 @@ const experienceData = [
   role: "Software Developer Intern",
   company: "Tesselonix Pvt. Ltd.",
   duration: "May 2026 - Present",
-  description: "Worked on real-world web and mobile applications using ReactJS, React Native, NodeJS, ExpressJS, and MongoDB. Developed responsive user interfaces, integrated REST APIs, optimized application performance, and collaborated with the development team to deliver scalable full-stack solutions.",
+  description: "Contributed to the development of scalable web and mobile applications using ReactJS, React Native, NodeJS, ExpressJS, and MongoDB. Worked on building responsive UI components, integrating REST APIs, fixing bugs, improving application performance, and collaborating with senior developers to deliver production-ready features.",
   icon: "💻"
 },
 {
   role: "Freelance Software Developer",
   company: "Youthconnect Pvt. Ltd.",
-  duration: "Jan 2026 - Apr 2026",
-  description: "Built and maintained cross-platform mobile apps and dynamic web applications for clients. Worked with ReactJS, React Native, NodeJS, ExpressJS, and MongoDB to develop full-stack solutions, implement API integrations, and deliver user-focused real-world projects.",
+  duration: "Nov 2025 - Apr 2026",
+  description: "Developed custom full-stack web and mobile applications tailored to client requirements. Implemented authentication systems, API integrations, real-time features, and responsive user interfaces while ensuring smooth performance and maintainable code using modern JavaScript technologies.",
   icon: "📱"
+},
+{
+  role: "Freelance Software Developer",
+  company: "Self Employed",
+  duration: "Feb 2025 - Nov 2025",
+  description: "Worked independently on freelance projects, creating responsive websites and cross-platform mobile applications using ReactJS, React Native, NodeJS, ExpressJS, and MongoDB. Managed complete project lifecycles including UI development, backend APIs, deployment, and client communication.",
+  icon: "🚀"
 },
 ];
 
