@@ -9,6 +9,7 @@ import Experience from "./pages/Experience"
 import Project from "./pages/Project"
 import Contact from "./pages/Contact"
 import Resume from "./pages/Resume"
+import PageNotFound from "./pages/PageNotFound"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -43,6 +44,7 @@ const App = () => {
             <Route path='/crafted-projects' element={<Project />} />
             <Route path='/lets-connect' element={<Contact />} />
             <Route path='/resume-hub' element={<Resume />} />
+            <Route path='/*' element={<PageNotFound />} />
           </Routes>
         </div>
       </div>
