@@ -10,6 +10,7 @@ import Project from "./pages/Project"
 import Contact from "./pages/Contact"
 import Resume from "./pages/Resume"
 import PageNotFound from "./pages/PageNotFound"
+import BlogsList from './pages/BlogsList'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -18,8 +19,8 @@ const App = () => {
 
   useEffect(() => {
   AOS.init({
-    duration: 1000, // animation duration in ms
-    once: true      // animation triggers only once // false karne pr animation repeat hoga 
+    duration: 1000, 
+    once: false 
   });
 }, []);
 
@@ -44,6 +45,7 @@ const App = () => {
             <Route path='/crafted-projects' element={<Project />} />
             <Route path='/lets-connect' element={<Contact />} />
             <Route path='/resume-hub' element={<Resume />} />
+            <Route path='/blog' element={<BlogsList />} />
             <Route path='/*' element={<PageNotFound />} />
           </Routes>
         </div>

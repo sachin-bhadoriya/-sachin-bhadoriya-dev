@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import "./styles/navbar.css";
 import { CiMenuFries } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const { pathname } = useLocation()
 
     return (
         <nav className="navbar">
@@ -18,26 +20,31 @@ const Navbar = () => {
                     }`}
             >
                 <li>
-                    <Link onClick={() => setMenuOpen(false)} to="/">Home</Link>
+                    <Link onClick={() => setMenuOpen(false)} to="/" className={pathname === "/" ? "active-link" : ""}>Home</Link>
                 </li>
 
                 <li>
-                    <Link onClick={() => setMenuOpen(false)} to="/the-story">About</Link>
+                    <Link onClick={() => setMenuOpen(false)} to="/the-story" className={pathname === "/the-story" ? "active-link" : ""}>About</Link>
                 </li>
 
                 <li>
-                    <Link onClick={() => setMenuOpen(false)} to="/my-toolkit">Skills</Link>
+                    <Link onClick={() => setMenuOpen(false)} to="/my-toolkit" className={pathname === "/my-toolkit" ? "active-link" : ""}>Skills</Link>
                 </li>
 
                 <li>
-                    <Link onClick={() => setMenuOpen(false)} to="/journey">Experience</Link>
+                    <Link onClick={() => setMenuOpen(false)} to="/journey" className={pathname === "/journey" ? "active-link" : ""}>Experience</Link>
                 </li>
 
                 <li>
-                    <Link onClick={() => setMenuOpen(false)} to="/crafted-projects">Projects</Link>
+                    <Link onClick={() => setMenuOpen(false)} to="/crafted-projects" className={pathname === "/crafted-projects" ? "active-link" : ""}>Projects</Link>
                 </li>
+
                 <li>
-                    <Link onClick={() => setMenuOpen(false)} to="/lets-connect">Contact</Link>
+                    <Link onClick={() => setMenuOpen(false)} to="/blog" className={pathname === "/blog" ? "active-link" : ""}>Blogs</Link>
+                </li>
+
+                <li>
+                    <Link onClick={() => setMenuOpen(false)} to="/lets-connect" className={pathname === "/lets-connect" ? "active-link" : ""}>Contact</Link>
                 </li>
             </ul>
 

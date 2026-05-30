@@ -12,8 +12,8 @@ return (
         <h4 className='title'>And I'm a Frontend Developer</h4>
         <p className='title'>Passionate about building web apps with great UI and real-world functionality. I blend design with code to create impactful digital experiences.</p>
         <div className="p-home-btn-c">
-          <button data-aos="zoom-in"><Link to="/crafted-projects">View Projects</Link></button>
-          <button data-aos="zoom-in"><Link to={url}>Download Resume</Link></button>
+          <Link to="/crafted-projects"><button data-aos="zoom-in">View Projects</button></Link>
+          <Link to={url}><button data-aos="zoom-in">Download Resume</button></Link>
         </div>
       </div>
     </section>

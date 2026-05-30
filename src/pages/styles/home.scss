@@ -51,17 +51,17 @@
     cursor: pointer;
 }
 
-.p-home-m-c button:nth-child(2):active {
+.p-home-m-c a:nth-child(2):active button {
     transform: translate(2px, 2px);
     box-shadow: none;
 }
 
-.p-home-m-c button:nth-child(1):active {
+.p-home-m-c a:nth-child(1):active button {
     transform: translate(2px, 2px);
     box-shadow: none;
 }
 
-.p-home-m-c button:nth-child(1) {
+.p-home-m-c a:nth-child(1) button {
     border: 0.3px solid #fff;
     color: #fff;
     background-color: transparent;
@@ -69,17 +69,17 @@
     backdrop-filter: blur(10px);
 }
 
-.p-home-m-c button:nth-child(1) a {
+.p-home-m-c a:nth-child(1) button {
     color: white;
     text-decoration: none;
 }
 
-.p-home-m-c button:nth-child(2) a {
+.p-home-m-c a:nth-child(2) button {
     color: #b9436c;
     text-decoration: none;
 }
 
-.p-home-m-c button:nth-child(2) {
+.p-home-m-c a:nth-child(2) button {
     border: 0.3px solid #b9436c;
     color: #b9436c;
     background-color: transparent;
