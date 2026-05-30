@@ -1,7 +1,8 @@
-import BlogCard from '../assets/BlogCard'
 import './styles/blogsList.scss'
 import { blogs } from "../data.js"
-import { useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
+import Skeleton from 'react-loading-skeleton'
+const BlogCard = lazy(() => import('../assets/BlogCard'))
 
 const BlogsList = () => {
   const [searchValue, setSearchValue] = useState("")
@@ -24,7 +25,9 @@ const BlogsList = () => {
       </div>
       <div className="blog-cards-main-container">
         {filteredItems.map((blog) => (
-          <BlogCard key={blog.id} image={blog.coverImage} blogDate={blog.date} heading={blog.title} paragraph={blog.excerpt} imageTag={blog.category} readMoreLink="" />
+          <Suspense fallback={<Skeleton height={300} baseColor='gray' borderRadius={20} />}>
+            <BlogCard key={blog.id} image={blog.coverImage} blogDate={blog.date} heading={blog.title} paragraph={blog.excerpt} imageTag={blog.category} readMoreLink="" />
+          </Suspense>
         ))}
       </div>
     </section>

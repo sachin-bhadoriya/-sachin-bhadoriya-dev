@@ -11,6 +11,7 @@ import Contact from "./pages/Contact"
 import Resume from "./pages/Resume"
 import PageNotFound from "./pages/PageNotFound"
 import BlogsList from './pages/BlogsList'
+import 'react-loading-skeleton/dist/skeleton.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

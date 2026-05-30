@@ -54,7 +54,7 @@ const Experience = () => {
                 <p className="description">{exp.description}</p>
               </div>
             </div>
-          );
+          )
         })}
       </div>
     </section>

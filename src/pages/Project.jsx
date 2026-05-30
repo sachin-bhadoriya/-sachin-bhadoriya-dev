@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import './styles/project.scss';
+import Skeleton from 'react-loading-skeleton';
+const ProjectCard = lazy(() => import("../assets/ProjectCard"))
 
 const projectsData = [
   {
     title: "Hotel Booking Website",
     category: "Full Stack Project",
     description: "A comprehensive hotel management platform featuring real-time room booking, availability checks, secure payment gateway integration, and an intuitive user dashboard.",
-    img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=500&auto=format&fit=crop", 
+    img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=500&auto=format&fit=crop",
     tags: ["React", "NodeJS", "MongoDB", "Express"],
     liveLink: "https://hill-view-escape-frontend-only.vercel.app/",
     githubLink: "https://github.com/sachin-bhadoriya/Hill_View_Escape-Frontend-only"
@@ -60,9 +62,9 @@ const projectsData = [
     title: "Personal Portfolio Website",
     category: "Frontend Project",
     description: "My personal developer portfolio website designed with a sleek glassmorphic theme. Highlights my frontend, backend skills, projects, and career journey with smooth animations.",
-    img: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=500&auto=format&fit=crop", 
+    img: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=500&auto=format&fit=crop",
     tags: ["React", "SCSS", "Three.JS"],
-    liveLink: "https://sachin-bhadoriya-dev.vercel.app/", 
+    liveLink: "https://sachin-bhadoriya-dev.vercel.app/",
     githubLink: "https://github.com/sachin-bhadoriya/-sachin-bhadoriya-dev"
   }
 ];
@@ -73,31 +75,9 @@ const Projects = () => {
       <h2>PROJECTS</h2>
       <div className="projects-container">
         {projectsData.map((project, index) => (
-          <div data-aos="zoom-in" className="project-card" key={index}>
-            <div className="project-img-wrapper">
-              <img src={project.img} alt={project.title} />
-            </div>
-            
-            <div className="project-details">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              
-              <div className="project-tags">
-                {project.tags.map((tag, tagIndex) => (
-                  <span className="tag" key={tagIndex}>{tag}</span>
-                ))}
-              </div>
-              
-              <div className="project-links">
-                <a href={project.liveLink} target="_blank" rel="noreferrer" className="btn live-btn">
-                  Live Demo
-                </a>
-                <a href={project.githubLink} target="_blank" rel="noreferrer" className="btn github-btn">
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
+          <Suspense fallback={<Skeleton baseColor='gray' height={400} borderRadius={20} />}>
+            <ProjectCard key={index} {...project} />
+          </Suspense>
         ))}
       </div>
     </section>

@@ -1,4 +1,7 @@
+import { lazy, Suspense } from 'react'
 import './styles/skills.scss'
+import Skeleton from 'react-loading-skeleton'
+const SkillsCard = lazy(() => import("../assets/SkillsCard"))
 
 const skill = {
   frontend: [
@@ -31,10 +34,9 @@ const Skills = () => {
         <h4>Frontend Technologies</h4>
         <div className="skills-container">
           {skill.frontend.map((i, index) => (
-            <div data-aos="zoom-in" className="skill-box" key={index}>
-              <img src={i.img} alt={i.name} />
-              <h5>{i.name}</h5>
-            </div>
+            <Suspense fallback={<Skeleton height={120} width={120} borderRadius={10} baseColor='gray' />}>
+              <SkillsCard key={index} img={i.img} name={i.name} />
+            </Suspense>
           ))}
         </div>
       </article>
@@ -42,10 +44,9 @@ const Skills = () => {
         <h4>Backend & Database Technologies</h4>
         <div className="skills-container">
           {skill.backend.map((i, index) => (
-            <div data-aos="zoom-in" className="skill-box" key={index}>
-              <img src={i.img} alt={i.name} />
-              <h5>{i.name}</h5>
-            </div>
+            <Suspense fallback={<Skeleton height={120} width={120} borderRadius={10} baseColor='gray' />}>
+              <SkillsCard key={index} img={i.img} name={i.name} />
+            </Suspense>
           ))}
         </div>
       </article>
@@ -53,10 +54,9 @@ const Skills = () => {
         <h4>Tools & Platforms & Others</h4>
         <div className="skills-container">
           {skill.tools.map((i, index) => (
-            <div data-aos="zoom-in" className="skill-box" key={index}>
-              <img src={i.img} alt={i.name} />
-              <h5>{i.name}</h5>
-            </div>
+            <Suspense fallback={<Skeleton height={120} width={120} borderRadius={10} baseColor='gray' />}>
+              <SkillsCard key={index} img={i.img} name={i.name} />
+            </Suspense>
           ))}
         </div>
       </article>
