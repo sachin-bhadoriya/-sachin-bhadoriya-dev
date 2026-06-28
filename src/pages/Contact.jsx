@@ -25,7 +25,7 @@ const Contact = () => {
     setFile("")
   }
   return (
-    <section data-aos="fade" className='p-about-m-c'>
+    <section data-aos="fade" className='p-about-m-c container'>
       <h2>LET'S CONNECT !</h2>
       <article className='p-contact-article-c'>
         <div className="p-contact-data-c">
