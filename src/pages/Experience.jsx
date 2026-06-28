@@ -27,7 +27,7 @@ const experienceData = [
 
 const Experience = () => {
   return (
-    <section data-aos="fade" className="p-experience-m-c">
+    <section data-aos="fade" className="p-experience-m-c container">
       <div className="experience-header">
         <h2>EXPERIENCE</h2>
       </div>
